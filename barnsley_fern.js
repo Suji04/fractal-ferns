@@ -10,8 +10,8 @@ var c_;
 var d;
 var c = document.getElementById('can');
 var ctx = c.getContext('2d');
-ctx.fillStyle="rgb(122, 108, 209)";
-ctx.fillRect(0,0,c.width,c.height);
+// ctx.fillStyle="rgb(122, 108, 209)";
+// ctx.fillRect(0,0,c.width,c.height);
 var x=0;
 var y=0;
 
