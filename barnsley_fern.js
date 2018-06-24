@@ -27,8 +27,8 @@ function drawFern1(){
 	if(a==false) return;
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
-	green=mapRange(py,5,600,240,50);
-	ctx.fillStyle="rgb(50, "+green+",0)";
+	var green=mapRange(py,5,600,240,50);
+	ctx.fillStyle="rgb(50, "+green+", 0)";
 	ctx.fill();
 	var x1;
 	var y1;
@@ -63,7 +63,7 @@ function drawFern2() {
 	if(b==false) return;
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
-	green=mapRange(py,5,600,240,100);
+	var green=mapRange(py,5,600,240,100);
 	ctx.fillStyle="rgb(79, "+green+", 66)";
 	ctx.fill();
 	var x1;
@@ -100,7 +100,7 @@ function drawFern3() {
 	
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
-	green=mapRange(py,5,600,240,50);
+	var green=mapRange(py,5,600,240,50);
 	ctx.fillStyle="rgb(0, "+green+", 0)";
 	ctx.fill();
 	var x1;
@@ -136,7 +136,7 @@ function drawFern4() {
 	var py=mapRange(y,0,6,c.height-5,5);
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
-	green=mapRange(py,5,600,240,50);
+	var green=mapRange(py,5,600,240,50);
 	ctx.fillStyle="rgb(0, "+green+", 0)";
 	ctx.fill();
 	var x1;
