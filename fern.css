@@ -1,0 +1,40 @@
+.btns{
+	width :550px;
+	margin: 0 auto;
+	word-spacing: 24.5px;
+	
+}
+button {
+	outline: none;
+    background-color: #00ba59; 
+    border: none;
+    color: white;
+    padding: 15px 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'Patua One', cursive;
+}
+
+
+.drw{
+	margin: 10px auto;
+	width :550px;
+}
+
+#can{
+	width: 546px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+#but{
+
+	margin: 0 auto;
+	width: 106.36px;
+}
+
+#res{
+	background-color: red;
+}
