@@ -168,6 +168,8 @@ function drawFern4() {
 
 f1.addEventListener("click",function(){
 	res();
+		ctx.fillStyle="rgb(122, 108, 209)";
+	ctx.fillRect(0,0,c.width,c.height);
 	a=true;
 	for (var i = 0; i < 100; i++) {
 		if (a==false) break;
@@ -177,6 +179,8 @@ f1.addEventListener("click",function(){
 
 f2.addEventListener("click",function(){
 	res();
+		ctx.fillStyle="rgb(122, 108, 209)";
+	ctx.fillRect(0,0,c.width,c.height);
 	b=true;
 	for (var i = 0; i < 100; i++) {
 		if(b==false) break;
@@ -186,6 +190,8 @@ f2.addEventListener("click",function(){
 
 f3.addEventListener("click",function(){
 	res();
+		ctx.fillStyle="rgb(122, 108, 209)";
+	ctx.fillRect(0,0,c.width,c.height);
 	c_=true;
 	for (var i = 0; i < 100; i++) {
 		drawFern3();
@@ -193,7 +199,9 @@ f3.addEventListener("click",function(){
 });
 
 f4.addEventListener("click",function(){
-	res();
+	res();	
+	ctx.fillStyle="rgb(122, 108, 209)";
+	ctx.fillRect(0,0,c.width,c.height);
 	d=true;
 	for (var i = 0; i < 100; i++) {
 		drawFern4();
@@ -205,10 +213,9 @@ function res(){
 	b=false;
 	c_=false;
 	d=false;
-	ctx.fillStyle="rgb(122, 108, 209)";
 	ctx.clearRect(0,0,c.width,c.height);
-	
-	ctx.fillRect(0,0,c.width,c.height);
+	// ctx.fillStyle="rgb(122, 108, 209)";
+	// ctx.fillRect(0,0,c.width,c.height);
 }
 
 r.addEventListener("click",function(){
