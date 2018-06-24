@@ -3,7 +3,7 @@ var f2=document.getElementById("btn2");
 var f3=document.getElementById("btn3");
 var f4=document.getElementById("btn4");
 var r=document.getElementById("res");
-
+var g;
 var a;
 var b;
 var c_;
@@ -15,9 +15,9 @@ var ctx = c.getContext('2d');
 var x=0;
 var y=0;
 
-function mapRange (value, e, f, g, h) {
+function mapRange (value, e, f, z, h) {
     value = (value - e) / (f - e);
-    return g + value * (h - g);
+    return z + value * (h - z);
 }
 
 function drawFern1(){
@@ -25,11 +25,12 @@ function drawFern1(){
 	var px=mapRange(x,-2.1820,2.6558,5,c.width-5);
 	var py=mapRange(y,0,9.9983,c.height-5,5);
 	if(a==false) return;
+	g =mapRange(py,5,600,240,50);
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
-// 	var green=mapRange(py,5,600,240,50);
-// 	ctx.fillStyle="rgb(50, "+green+", 0)";
-	ctx.fillStyle="#2b9b4d";
+	
+	ctx.fillStyle="rgb(50, "+g+", 0)";
+// 	ctx.fillStyle="#2b9b4d";
 	ctx.fill();
 	var x1;
 	var y1;
@@ -62,11 +63,11 @@ function drawFern2() {
 	var px=mapRange(x,-1.8,2,0,c.width);
 	var py=mapRange(y,-.6,7.5,c.height,5);
 	if(b==false) return;
+	g=mapRange(py,5,600,240,100);
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
-// 	var green=mapRange(py,5,600,240,100);
-// 	ctx.fillStyle="rgb(79, "+green+", 66)";
-	ctx.fillStyle="#2b9b4d";
+	ctx.fillStyle="rgb(79, "+g+", 66)";
+// 	ctx.fillStyle="#2b9b4d";
 	ctx.fill();
 	var x1;
 	var y1;
@@ -99,12 +100,11 @@ function drawFern3() {
 	if(c_==false) return;
 	var px=mapRange(x,-1.8,2,0,c.width);
 	var py=mapRange(y,-.6,7.5,c.height,5);
-	
+	g=mapRange(py,5,600,240,50);
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
-// 	var green=mapRange(py,5,600,240,50);
-// 	ctx.fillStyle="rgb(0, "+green+", 0)";
-	ctx.fillStyle="#2b9b4d";
+	ctx.fillStyle="rgb(0, "+g+", 0)";
+// 	ctx.fillStyle="#2b9b4d";
 	ctx.fill();
 	var x1;
 	var y1;
@@ -137,11 +137,11 @@ function drawFern4() {
 	if(d==false) return;
 	var px=mapRange(x,-1.8,2,5,c.width-5);
 	var py=mapRange(y,0,6,c.height-5,5);
+	g=mapRange(py,5,600,240,50);
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
-// 	var green=mapRange(py,5,600,240,50);
-// 	ctx.fillStyle="rgb(0, "+green+", 0)";
-	ctx.fillStyle="#2b9b4d";
+	ctx.fillStyle="rgb(0, "+g+", 0)";
+// 	ctx.fillStyle="#2b9b4d";
 	ctx.fill();
 	var x1;
 	var y1;
