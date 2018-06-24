@@ -25,7 +25,7 @@ function drawFern1(){
 	var px=mapRange(x,-2.1820,2.6558,5,c.width-5);
 	var py=mapRange(y,0,9.9983,c.height-5,5);
 	if(a==false) return;
-	g =mapRange(py,5,600,240,50);
+	g =Math.floor(mapRange(py,5,600,240,50));
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
 	
@@ -63,7 +63,7 @@ function drawFern2() {
 	var px=mapRange(x,-1.8,2,0,c.width);
 	var py=mapRange(y,-.6,7.5,c.height,5);
 	if(b==false) return;
-	g=mapRange(py,5,600,240,100);
+	g=Math.floor(mapRange(py,5,600,240,100));
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
 	ctx.fillStyle="rgb(79, "+g+", 66)";
@@ -100,7 +100,7 @@ function drawFern3() {
 	if(c_==false) return;
 	var px=mapRange(x,-1.8,2,0,c.width);
 	var py=mapRange(y,-.6,7.5,c.height,5);
-	g=mapRange(py,5,600,240,50);
+	g=Math.floor(mapRange(py,5,600,240,50));
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
 	ctx.fillStyle="rgb(0, "+g+", 0)";
@@ -137,7 +137,7 @@ function drawFern4() {
 	if(d==false) return;
 	var px=mapRange(x,-1.8,2,5,c.width-5);
 	var py=mapRange(y,0,6,c.height-5,5);
-	g=mapRange(py,5,600,240,50);
+	g=Math.floor(mapRange(py,5,600,240,50));
 	ctx.beginPath();
 	ctx.arc(px,py,1,0,2*Math.PI);
 	ctx.fillStyle="rgb(0, "+g+", 0)";
