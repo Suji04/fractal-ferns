@@ -1,6 +1,7 @@
 .btns{
-	width :550px;
-	margin: 0 auto;
+	text-align: center;
+	width :600px;
+	margin: 20px auto;
 	word-spacing: 24.5px;
 	
 }
@@ -19,8 +20,8 @@ button {
 
 
 .drw{
-	margin: 10px auto;
-	width :550px;
+	margin: 20px auto;
+	width :546px;
 }
 
 #can{
@@ -32,9 +33,13 @@ button {
 #but{
 
 	margin: 0 auto;
-	width: 106.36px;
+	width: 546px;
+	text-align: center;
 }
 
 #res{
 	background-color: red;
+}
+#pas{
+	background-color: #f7ed38;
 }
